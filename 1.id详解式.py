@@ -1,0 +1,13 @@
+a=1
+b=1
+print(id(a))
+print(id(b))
+a=1.0
+b=1.o
+print(id(a))
+print(id(b))
+a=5555
+b=5555
+print(id(a))
+print(id(b))
+#这里是因为在分配内存的时候,python会为较小的int类型的值重用内存空间
