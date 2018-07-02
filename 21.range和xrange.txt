@@ -1,0 +1,1 @@
+range和xrange：range是一个很大的list，而xrange是一个生成器
