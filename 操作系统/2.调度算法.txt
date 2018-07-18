@@ -1,0 +1,6 @@
+1.先来先服务（FCFS）
+2.短作业优先（SJF）
+3.最高优先权调度（Priority Scheduling）
+4.时间片轮转（RR）
+5.多级反馈队列调度（MFQS）
+常用介绍:https://www.jianshu.com/p/6edf8174c1eb
