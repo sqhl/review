@@ -1,0 +1,51 @@
+1.避免元素的收缩或者说扩展
+2.range对象
+3.x = [random.random(0,100) for i in range(1000)]
+  d={}
+  for i in x:
+	d[i]+=1
+  print(d)
+
+4.a = input() 输入一个list
+  a = eval(a)  就变成了[list]
+  b,c = eval(input())
+  print(a[b,c+1])
+eval 将str转化为不带""的非str类型
+
+5.sort排序之后返回None
+
+6.列表删除 
+try:
+	a.remove(1)
+except:
+	print("不存在")
+
+7.[3, 4, 5, 6, 7, 9, 11, 13, 15, 17]，a=[3:7] 返回6，7，9，11 切片是左闭右开
+
+8.d={}
+  a=input()
+  if a in d.keys():
+	print(d[a])
+  else:
+	print("不存在")
+
+9.a[:9] = sorted(a[:9],reverse=True)
+
+10.将a=[1,2,3],b=[1,2,3]转化为c={1:1,2:2,3:3} dict(zip(a,b))
+11.b=a[::3]切片取值
+12.[5 for i in range(10)]
+13.x=3==3.5 x=False
+14.range(10,1,-3) 10,7,4  range(1,10,3) 1,4,7
+15.a=[1,2,3] b=[1,3,4] id(a[0]) id(b[0]) 和 id(1) 都是在同一个内存地址，原因应该是引用了地址
+16.sorted([1, 2, 3], reverse=True) == reversed([1, 2, 3]) False
+   sorted([1, 2, 3], reverse=True) == list(reversed([1, 2, 3])) True
+
+17.sorted([111, 2, 33], key=lambda x: len(str(x))) 2,33,111
+   sorted([111, 2, 33], key=lambda x: -len(str(x))) 111,33,2
+   max([111, 22, 3], key=str) 3 因为str是一次比较
+
+18.x=(3,) x=(3,)
+   x=(3)  x=3  大概就是，的原因 遇到比较多
+
+19.globals() 查看包含当前作用域内所有全局变量和值的字典。
+   locals()查看包含当前作用域内所有局部变量和值的字典。
