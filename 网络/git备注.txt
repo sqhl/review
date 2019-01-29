@@ -1,0 +1,25 @@
+#进入需要上传的文件夹：
+git init #初始化，这时候会在这里出现一个隐藏文件.git
+git add . #点的意思是当前路径下的所有文件
+git commit -m "提交信息"
+
+#接下来就是链接仓库：
+git remote add origin https://github.com/ha....../.git
+#上传本地代码：
+git push -u origin master
+#这里可能会出错的原因是自己创建了readme.md再git上,使用下面的命令后再合并就可以了
+git pull --rebase origin master‘
+
+
+mmp只能通过同步之后删除再上传
+
+git status 查看当前修改的状态
+git log 查看上传的版本号
+git reset head <file> + git checkout -- <Blog> 恢复被误删的文件
+
+git config --system --unset credential.helper 初始化账号 密码 
+
+修改上传信息：
+git commit --amend 
+
+git rebase -i HEAD~3 修改提交信息
